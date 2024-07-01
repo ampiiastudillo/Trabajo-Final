@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <!--logo-->
+        <img src="logo2limpio.png" class="logo" alt="logo">
+        <!-- Menú horizontal -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agregar.html">Agregar</a></li>
+                <li><a href="mostrar.html">Mostrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="frmAgregar">
+        <form action="javascript:none">
+            <h1>NUEVO PRODUCTO</h1>
+            <h2>Título</h2>
+            <input id="titulo" type="text">
+            <h2>Precio en Pesos</h2>
+            <input id="precioPeso" type="text">
+            <h2>Precio en Dólares</h2>
+            <input id="precioDolar" type="text">
+            <h2>Fecha</h2>
+            <input id="fecha" type="date">
+            <button onclick="guardarProducto()">Guardar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

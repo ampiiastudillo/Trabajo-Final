@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: rgb(180, 50, 50);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.link1, .link2 {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.link1:hover, .link2:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.ObtenerProductos {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid rgb(15, 5, 5);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(7, 4, 4);
+    color: white;
+}
+.formodificar {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form h2 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: rgb(12, 9, 9);
+    outline: none;
+}
+
+#btnmodificar {
+    text-align: center;
+}
+
+#btnmodificar button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(5, 3, 3);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btnmodificar button:hover {
+    background-color: #362a2a;
+    transition: 0.5s;
+}

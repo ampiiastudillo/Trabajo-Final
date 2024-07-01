@@ -1,0 +1,172 @@
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    max-width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu ul li a:hover,
+.menu ul li a:focus {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+.contenedor {
+    padding: 2em;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Formulario de productos */
+.product-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 2em;
+    margin: 1em 0;
+}
+
+.product-form h2 {
+    margin-top: 0;
+}
+
+.product-form label {
+    display: block;
+    margin-top: 1em;
+}
+
+.product-form input {
+    width: calc(100% - 20px);
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.product-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.product-form button:hover {
+    background-color: #575757;
+}
+
+/* Botones generales */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 600px) {
+    .vertical-menu {
+        width: 100%;
+        float: none;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
